@@ -70,7 +70,6 @@
     $xml = "<key state=\"release\" sender=\"Gabbo\">$key</key>";
     curlPOST("key", $xml);
 
-
   }
 
 
