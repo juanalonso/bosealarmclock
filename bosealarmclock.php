@@ -3,14 +3,14 @@
   $boseIP = "192.168.1.17";
   $preset = 1;
 
-  setVolume(0);
   setPreset($preset);
   usleep (1000000);
   setStop();
   setShuffle();
+  setVolume(0);    
   setNextTrack();
-  for ($f=1;$f<25;$f++) {
-    usleep (5000000);
+  for ($f=1;$f<21;$f++) {
+    usleep (8000000);
     setVolume($f);    
   }
 
