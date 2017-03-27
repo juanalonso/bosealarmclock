@@ -25,7 +25,7 @@
       return;
     }
 
-    $xml = "<volume>$vol<volume>";
+    $xml = "<volume>$vol</volume>";
     curlPOST("volume", $xml);
 
   }
@@ -87,5 +87,5 @@
     curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
     $response = curl_exec($ch);
     curl_close($ch);
-
+    echo $response;
   }
